@@ -1,0 +1,1057 @@
+{
+  "id":"20"
+ ,"Identification":{
+    "Name":"Modal tabla eventos"
+   ,"Alias":"MODAL-TABLA-EVENTOS"
+   ,"Title":"FORMULARIO EVENTO"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"10070249795784081"
+     ,"Identification":{
+        "Title":"Tabla eventos"
+       ,"Type":"Form"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"EVENTO"
+       ,"Include ROWID Column":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (8165136647772814)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Edit":{
+          "Enabled":true
+         ,"Allowed Operations":[
+            "Add Row"
+           ,"Update Row"
+           ,"Delete Row"
+          ]
+         ,"Lost Update Type":"Row Values"
+        }
+      }
+    }
+   ,{
+      "id":"10079071548784100"
+     ,"Identification":{
+        "Title":"Buttons"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_03"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Buttons Container (8187617575772824)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"Text (escape special characters)"
+         ,"Show Line Breaks":true
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"10070595993784082"
+     ,"Identification":{
+        "Name":"P20_ID"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"ID"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":true
+       ,"Primary Key":true
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"10070950435784090"
+     ,"Identification":{
+        "Name":"P20_NOMBRE"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Nombre"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (8252555287772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":150
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"NOMBRE"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Introducir el nombre oficial del evento"
+      }
+    }
+   ,{
+      "id":"10071336502784092"
+     ,"Identification":{
+        "Name":"P20_FECHA_HORA"
+       ,"Type":"Date Picker"
+      }
+     ,"Label":{
+        "Label":"Fecha y hora"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Show Time":true
+       ,"Display As":"Popup"
+       ,"Minimum Date":"None"
+       ,"Maximum Date":"None"
+       ,"Multiple Months":false
+       ,"Use Defaults":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (8252555287772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":32
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"FECHA_HORA"
+       ,"Data Type":"TIMESTAMP"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Seleccionar la fecha y hora en la que se llevar\u00E1 acabo el evento"
+      }
+    }
+   ,{
+      "id":"10073375942784094"
+     ,"Identification":{
+        "Name":"P20_DISTANCIA"
+       ,"Type":"Number Field"
+      }
+     ,"Label":{
+        "Label":"Distancia"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Number Alignment":"Right"
+      }
+     ,"Layout":{
+        "Sequence":80
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":32
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"DISTANCIA"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Introducir la cantidad total de kil\u00F3metros que ser\u00E1n recorridos durante el evento."
+      }
+    }
+   ,{
+      "id":"10073772239784094"
+     ,"Identification":{
+        "Name":"P20_NIVEL"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Nivel"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":90
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (8252555287772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"Static Values"
+       ,"Static Values":"STATIC:1;1,2;2,3;3,4;4,5;5"
+       ,"Display Extra Values":true
+       ,"Display Null Value":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"NIVEL"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Especificar el n\u00FAmero de nivel del evento."
+      }
+    }
+   ,{
+      "id":"10074132473784094"
+     ,"Identification":{
+        "Name":"P20_RECOMENDACIONES"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Recomendaciones"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":100
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":4000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"RECOMENDACIONES"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Ingresar recomendaciones a tomar en cuenta en el evento para los ciclistas."
+      }
+    }
+   ,{
+      "id":"10074571768784095"
+     ,"Identification":{
+        "Name":"P20_MIN_RENTA"
+       ,"Type":"Number Field"
+      }
+     ,"Label":{
+        "Label":"D\u00EDas previos para habilitar renta"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Number Alignment":"Right"
+      }
+     ,"Layout":{
+        "Sequence":110
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Required - Floating (8252555287772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":32
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"MIN_RENTA"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Introducir la cantidad de d\u00EDas previos al evento para que sea habilitado el servicio de renta de bicicletas para las personas interesadas en participar en el evento."
+      }
+    }
+   ,{
+      "id":"10074939253784095"
+     ,"Identification":{
+        "Name":"P20_MAPA"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Mapa"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":120
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":60
+       ,"Height":4
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":1000
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"MAPA"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"\u003Cp\u003EPara agregar un mapa a un respectivo recorrido se deber\u00E1n tener \n    claros los puntos de partida y los puntos de llegada, ya que estos \n    se necesitar\u00E1n registrar en Google Maps.\u003C\/p\u003E\n\u003Cp\u003ELos pasos para agregar un mapa son los siguientes: \u003C\/p\u003E\n\u003Col\u003E\n    \u003Cli\u003EAbrir Google Maps en alg\u00FAn navegador. \u003C\/li\u003E\n        \u003Cdiv align=\"center\"\u003E\n            \u003Cimg src=\"#APP_FILES#mapa1.png\" width=\"350\" height=\"200\"\u003E\n        \u003C\/div\u003E\n    \u003Cli\u003EIngresar el punto de partida, las paradas (de ser as\u00ED) y el punto de llegada.\u003C\/li\u003E\n        \u003Cdiv align=\"center\"\u003E\n                \u003Cimg src=\"#APP_FILES#mapa2.png\" width=\"350\" height=\"200\"\u003E\n        \u003C\/div\u003E\n    \u003Cli\u003EUna vez listo el recorrido, hacer click en el men\u00FA de hamburguesa \n        que est\u00E1 en la esquina superior izquierda.\u003C\/li\u003E\n        \u003Cdiv align=\"center\"\u003E\n                \u003Cimg src=\"#APP_FILES#mapa5.png\" width=\"200\" height=\"140\"\u003E\n        \u003C\/div\u003E\n    \u003Cli\u003EDespu\u00E9s, seleccionar la opci\u00F3n \u201Ccompartir o incorporar mapa\u201D.\u003C\/li\u003E\n        \u003Cdiv align=\"center\"\u003E\n                \u003Cimg src=\"#APP_FILES#mapa3.png\" width=\"140\" height=\"200\"\u003E\n        \u003C\/div\u003E\n    \u003Cli\u003ESeleccionar la opci\u00F3n \u201CIncorporar un mapa\u201D.\u003C\/li\u003E\n    \u003Cli\u003EPoner la opci\u00F3n de \u201Ctama\u00F1o personalizado\u201D e introducir los valores 1000 x 450.\u003C\/li\u003E\n        \u003Cdiv align=\"center\"\u003E\n                \u003Cimg src=\"#APP_FILES#mapa6.png\" width=\"350\" height=\"150\"\u003E\n        \u003C\/div\u003E\n    \u003Cli\u003EHacer click en \"copiar HTML\".\u003C\/li\u003E\n    \u003Cli\u003EPegarlo en el campo \"mapa\".\u003C\/li\u003E\n\u003C\/ol\u003E\n"
+      }
+    }
+   ,{
+      "id":"10075376811784095"
+     ,"Identification":{
+        "Name":"P20_MINUTOS_ANTES"
+       ,"Type":"Number Field"
+      }
+     ,"Label":{
+        "Label":"Tiempo de llegada previo a la hora (Mins)"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Number Alignment":"Right"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":32
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":255
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"MINUTOS_ANTES"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Introducir el tiempo previo en minutos en el que las personas deben de encontrarse en la ubicaci\u00F3n para antes de la hora de inicio del evento."
+      }
+    }
+   ,{
+      "id":"11025842211407305"
+     ,"Identification":{
+        "Name":"P20_PUNTOPARTIDA"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Punto de Partida"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+       ,"Height":5
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":300
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"PUNTOPARTIDA"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Ubicaci\u00F3n desde donde comienza la rodada."
+      }
+    }
+   ,{
+      "id":"11025932215407306"
+     ,"Identification":{
+        "Name":"P20_PUNTOLLEGADA"
+       ,"Type":"Textarea"
+      }
+     ,"Label":{
+        "Label":"Punto de Llegada"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Resizable":true
+       ,"Auto-Height":false
+       ,"Character Counter":false
+       ,"Trim Spaces":"Leading and Trailing"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Region":"Tabla eventos (10070249795784081)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+       ,"Height":5
+      }
+     ,"Validation":{
+        "Value Required":false
+       ,"Maximum Length":150
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Tabla eventos (10070249795784081)"
+       ,"Column":"PUNTOLLEGADA"
+       ,"Data Type":"VARCHAR2"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Ubicaci\u00F3n donde termina la rodada."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"10079481615784100"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Buttons (10079071548784100)"
+       ,"Position":"CLOSE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":true
+      }
+    }
+   ,{
+      "id":"10080891334784106"
+     ,"Identification":{
+        "Button Name":"DELETE"
+       ,"Label":"Eliminar evento"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Buttons (10079071548784100)"
+       ,"Position":"DELETE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL DELETE action"
+      }
+     ,"Confirmation":{
+        "Message":"\u0026APP_TEXT$DELETE_MSG!RAW."
+       ,"Style":"Danger"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P20_ID"
+      }
+    }
+   ,{
+      "id":"10081235850784106"
+     ,"Identification":{
+        "Button Name":"SAVE"
+       ,"Label":"Guardar cambios"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Buttons (10079071548784100)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P20_ID"
+      }
+    }
+   ,{
+      "id":"10081638685784106"
+     ,"Identification":{
+        "Button Name":"Crear"
+       ,"Label":"Crear evento"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Buttons (10079071548784100)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL INSERT action"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NULL"
+       ,"Item":"P20_ID"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"10079568811784100"
+     ,"Identification":{
+        "Name":"Cancel Dialog"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCEL (10079481615784100)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"10080318756784103"
+         ,"Identification":{
+            "Action":"Cancel Dialog"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"Cancel Dialog (10079568811784100)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"10071871976784093"
+     ,"Identification":{
+        "Name":"P20_FECHA_HORA must be timestamp"
+      }
+     ,"Execution Options":{
+        "Sequence":20
+      }
+     ,"Validation":{
+        "Type":"Item is a valid timestamp"
+       ,"Item":"P20_FECHA_HORA"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"#LABEL# must be a valid timestamp."
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P20_FECHA_HORA (10071336502784092)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"10082087304784107"
+     ,"Identification":{
+        "Name":"Initialize form Modal tabla eventos"
+       ,"Type":"Form - Initialization"
+       ,"Form Region":"Tabla eventos (10070249795784081)"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Before Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+   ,{
+      "id":"10082492906784107"
+     ,"Identification":{
+        "Name":"Process form Modal tabla eventos"
+       ,"Type":"Form - Automatic Row Processing (DML)"
+       ,"Form Region":"Tabla eventos (10070249795784081)"
+      }
+     ,"Settings":{
+        "Target Type":"Region Source"
+       ,"Prevent Lost Updates":true
+       ,"Lock Row":"Yes"
+       ,"Return Primary Key(s) after Insert":true
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"10082895980784108"
+     ,"Identification":{
+        "Name":"Close Dialog"
+       ,"Type":"Close Dialog"
+      }
+     ,"Execution Options":{
+        "Sequence":50
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "Type":"Request is contained in Value"
+       ,"Value":"CREATE,SAVE,DELETE"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"10844843397066235"
+     ,"Identification":{
+        "Name":"Go out"
+      }
+     ,"Execution Options":{
+        "Sequence":20
+       ,"Point":"Before Header"
+      }
+     ,"Behavior":{
+        "Type":"URL Identified by Item (Redirect)"
+       ,"Item":"\u0026LOGOUT_URL."
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT * FROM HK22_usuario WHERE upper(EMAIL) = :APP_USER;"
+      }
+    }
+  ]
+}

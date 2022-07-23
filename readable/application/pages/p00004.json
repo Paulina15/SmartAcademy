@@ -1,0 +1,345 @@
+{
+  "id":"4"
+ ,"Identification":{
+    "Name":"Curso"
+   ,"Alias":"EVENTO1"
+   ,"Title":"curso"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":"h1{\n    font-weight: lighter;\n    margin-left: 5%;\n    margin-top: 5%;\n}\np{\n    margin-left: 15%;\n    margin-right: 15%;\n    text-align: justify;\n}\n\n.imagen{\n    background-size: 80%;\n    background-position: center;\n    background-image: url(#APP_FILES#fondo_eventos.jpg);\n    background-repeat: no-repeat;\n    min-height: 200px; \n    max-height: 300px;\n}\n\n.imagen .content_cuadros{\n    background: transparent;\n    border: transparent;\n    padding-top: 4%;\n    width: 80%;\n    margin-left: 10%;\n}\n\n.cuadro li a span{\n    font-size: 14pt;    \n}\n.margin_bottom{\n    margin-bottom: 4%;\n}"
+  }
+ ,"Security":{
+    "Authentication":"Page Is Public"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"9271167297354732"
+     ,"Identification":{
+        "Title":"Objetivo Recorridos"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Ch1\u003EObjetivo\u003C\/h1\u003E\n\u003Cp\u003E \n    Los recorridos a trav\u00E9s de su uso recreativo, \n    contribuyen a la recuperaci\u00F3n de los espacios \n    p\u00FAbicos y fomentan la cohesi\u00F3n social y comunitaria.\n    Promueven, adem\u00E1s, el arraigo con el entorno, \n    creando lazos de identidad con la ciudad; est\u00E1n\n    abiertos a personas de todas las edades y son \n    completamente gratuitos.\n\u003C\/p\u003E\n\u003Cp\u003E\n    Fomentan que los participantes utilicen la bicicleta,\n    en principio, con fines recreativos y posteriormente\n    para transportarse en ella. La experiencia de diez a\u00F1os\n    de recorridos nos indica que se han creado grupos de\n    ciclistas con fines deportivos y que ha aumentado el\n    n\u00FAmero de ciclistas urbanos que la utilizan de manera\n    cotidiana en la ciudad.\n\u003C\/p\u003E"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"9271230385354733"
+     ,"Identification":{
+        "Title":"Funcionamiento"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Ch1\u003EFuncionamiento\u003C\/h1\u003E\n\u003Cp\u003EEl gran reto de movilizar de manera segura al contingente recae \n   en los Casacas Verdes, un grupo de voluntarios que asume la seguridad\n   dirigiendo y acompa\u00F1ando al pelot\u00F3n, cerrando las calles al tr\u00E1fico\n   veh\u00EDcular e instruyendo a ciclistas y automovilistas en los trayectos.\n   Los Casacas planean las rutas con anticipaci\u00F3n sobre la base de aumentar\n   el grado de dificultad (definidas por las pendientes y las distancias)\n   en cada mi\u00E9rcoles, esto es, el primero de cada mes se dise\u00F1a con nivel 1,\n   y este nivel aumenta en cada recorrido, por lo que el \u00FAltimo mi\u00E9rcoles de\n   cada mes el nivel es m\u00E1ximo. La planificaci\u00F3n incluye el dise\u00F1o en gabinete \n   y el trabajo de campo un d\u00EDa antes de la actividad a fin de verificar y ajustar\n   la ruta en caso de ser necesario.\n\u003C\/p\u003E\n\n\u003Cp\u003E\nPor seguridad, al inicio del contingente pedalean los ni\u00F1os con sus pap\u00E1s y lo \ncierra la \"Barredora\", una camioneta que brinda auxilio, fuera del primer \ncuadro de la ciudad, en caso de percance mec\u00E1nico o problemas m\u00E9dicos. \nLa Barredora es posible gracias a uno de nuestros voluntarios.\n\u003C\/p\u003E"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"9271345706354734"
+     ,"Identification":{
+        "Title":"asistir"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Ch1\u003E\u00BFQuieres Asistir?\u003C\/h1\u003E\n\n\u003Cp\u003ERecuerda que nuestros recorridos son totalmente gratuitos,\n   son eventos p\u00FAblicos y por lo tanto, cada quien es responsable\n   de su seguridad.\n\u003C\/p\u003E"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"9271725287354738"
+     ,"Identification":{
+        "Title":"section"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Form--xlarge"
+        ]
+       ,"CSS Classes":[
+          "imagen"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"9318199327350105"
+     ,"Identification":{
+        "Title":"slide_content"
+       ,"Type":"List"
+      }
+     ,"Source":{
+        "List":"default_events (9867061480401828)"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"section (9271725287354738)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "u-colors"
+        ]
+       ,"CSS Classes":[
+          "content_cuadros"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Appearance":{
+          "List Template":"Badge List (8225528736772840)"
+         ,"Template Options":[
+            "t-BadgeList--dash"
+           ,"t-BadgeList--cols"
+           ,"t-BadgeList--large"
+          ]
+        }
+      }
+    }
+   ,{
+      "id":"10100566182840421"
+     ,"Identification":{
+        "Title":"New"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"6"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"margin-top-lg"
+         ,"margin-bottom-lg"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"10100438097840420"
+     ,"Identification":{
+        "Button Name":"New"
+       ,"Label":"Pr\u00F3ximos recorridos"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"New (10100566182840421)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:6:\u0026SESSION.::\u0026DEBUG.:::"
+         ,"Page":"6"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+}

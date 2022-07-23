@@ -1,0 +1,749 @@
+{
+  "id":"30"
+ ,"Identification":{
+    "Name":"Detalles del evento"
+   ,"Alias":"DETALLES-DEL-EVENTO"
+   ,"Title":"INFORMACI\u00D3N DE LA RENTA"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Modal Dialog"
+   ,"Dialog Template":"Wizard Modal Dialog (8120069455772794)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Dialog":{
+    "Width":"600"
+   ,"Height":"100"
+   ,"CSS Classes":[
+      "t-Dialog--pullOutRight"
+    ]
+   ,"Chained":true
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":"button{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-align: center;  \n    height:40px; \n    width:160px;\n    top:50px;\n}"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"10877432146249906"
+     ,"Identification":{
+        "Title":"Titulo"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003CH3\u003E Detalles del evento: \u003CH3\u003E"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"10877527058249907"
+     ,"Identification":{
+        "Title":"Titulo"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003CH3\u003E Detalles de la bicicleta: \u003CH3\u003E"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"10877629897249908"
+     ,"Identification":{
+        "Title":"InfoBici"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select * from bici\nwhere id=:P30_ID_BICI\n"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "t-Form--standardPadding"
+         ,"t-Form--large"
+         ,"t-Form--stretchInputs"
+         ,"margin-top-sm"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Customizable and Shown By Default"
+      }
+     ,"Attributes":{
+        "id":"10877726801249909"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "Primary Key Column 1":"ID"
+        }
+       ,"Title":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u003Cp\u003EN\u00FAmero de bicicleta rentada: \u0026NUMERO.\u003C\/p\u003E\n\u003Cp\u003ERodada: \u0026RODADA.\u0027\u0027\u003C\/p\u003E\n\u003Cp\u003ECuadro: \u0026CUADRO.\u003C\/p\u003E\n\n"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"No Media"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+      }
+    }
+   ,{
+      "id":"11196746555240549"
+     ,"Identification":{
+        "Title":"Detalles del evento"
+       ,"Type":"Form"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"Table \/ View"
+       ,"Table Owner":"Parsing Schema"
+       ,"Table Name":"RENTA"
+       ,"Include ROWID Column":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Edit":{
+          "Enabled":true
+         ,"Allowed Operations":[
+            "Add Row"
+           ,"Update Row"
+           ,"Delete Row"
+          ]
+         ,"Lost Update Type":"Row Values"
+        }
+      }
+    }
+   ,{
+      "id":"11199861129240560"
+     ,"Identification":{
+        "Title":"Buttons"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_03"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Buttons Container (8187617575772824)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"Text (escape special characters)"
+         ,"Show Line Breaks":true
+        }
+      }
+    }
+   ,{
+      "id":"21592684825215361"
+     ,"Identification":{
+        "Title":"InfoEvento"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select * from evento\nwhere id=:P30_ID_EVENTO"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "t-Form--standardPadding"
+         ,"t-Form--large"
+         ,"t-Form--stretchInputs"
+         ,"margin-top-sm"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Customizable and Shown By Default"
+      }
+     ,"Attributes":{
+        "id":"11213984758259755"
+       ,"Appearance":{
+          "Layout":"Horizontal (Row)"
+        }
+       ,"Card":{
+          "Primary Key Column 1":"ID"
+        }
+       ,"Title":{
+          "Advanced Formatting":false
+         ,"Column":"NOMBRE"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u003Cp\u003EFecha y hora: \u0026FECHA_HORA.\u003C\/p\u003E\n"
+        }
+       ,"Body":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u003Cp\u003EDistancia: \u0026DISTANCIA. Kms.   \nNivel: \u0026NIVEL. \u003C\/br\u003E\nInicio del recorrido: \u0026PUNTOPARTIDA.\n\u003C\/p\u003E\n\u003Cp\u003ERecomendaciones:\u003C\/p\u003E\u0026RECOMENDACIONES."
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"No Media"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"11197067156240550"
+     ,"Identification":{
+        "Name":"P30_ID"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Detalles del evento (11196746555240549)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Detalles del evento (11196746555240549)"
+       ,"Column":"ID"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":true
+       ,"Primary Key":true
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"11197421547240556"
+     ,"Identification":{
+        "Name":"P30_ID_USUARIO"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Detalles del evento (11196746555240549)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Detalles del evento (11196746555240549)"
+       ,"Column":"ID_USUARIO"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"11197879961240557"
+     ,"Identification":{
+        "Name":"P30_ID_EVENTO"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Detalles del evento (11196746555240549)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Detalles del evento (11196746555240549)"
+       ,"Column":"ID_EVENTO"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"11198267323240558"
+     ,"Identification":{
+        "Name":"P30_ID_BICI"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"Detalles del evento (11196746555240549)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Form Region":"Detalles del evento (11196746555240549)"
+       ,"Column":"ID_BICI"
+       ,"Data Type":"NUMBER"
+       ,"Query Only":false
+       ,"Primary Key":false
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"11200255584240560"
+     ,"Identification":{
+        "Button Name":"CANCEL"
+       ,"Label":"Cancelar eliminaci\u00F3n"
+      }
+     ,"Layout":{
+        "Sequence":90
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"5"
+       ,"New Column":true
+       ,"Column Span":"3"
+       ,"Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--primary"
+         ,"t-Button--gapLeft"
+         ,"t-Button--gapRight"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Defined by Dynamic Action"
+       ,"Execute Validations":true
+      }
+    }
+   ,{
+      "id":"11201606772240564"
+     ,"Identification":{
+        "Button Name":"DELETE"
+       ,"Label":"Eliminar renta"
+      }
+     ,"Layout":{
+        "Sequence":80
+       ,"Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"5"
+       ,"New Column":true
+       ,"Column Span":"3"
+       ,"Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--large"
+         ,"t-Button--danger"
+         ,"t-Button--gapLeft"
+         ,"t-Button--gapRight"
+         ,"t-Button--gapTop"
+         ,"t-Button--gapBottom"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":false
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL DELETE action"
+      }
+     ,"Confirmation":{
+        "Message":"\u00BFEst\u00E1s seguro de eliminar esta renta?"
+       ,"Style":"Danger"
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT *\nFROM evento\nWHERE FECHA_HORA \u003E SYSTIMESTAMP AT TIME ZONE \u0027America\/Mexico_City\u0027+1\/24\nand id=:P30_ID_EVENTO"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"11200386224240560"
+     ,"Identification":{
+        "Name":"Cancel Dialog"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"CANCEL (11200255584240560)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"11201139176240562"
+         ,"Identification":{
+            "Action":"Cancel Dialog"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"Cancel Dialog (11200386224240560)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"11202869278240566"
+     ,"Identification":{
+        "Name":"Initialize form Detalles del evento"
+       ,"Type":"Form - Initialization"
+       ,"Form Region":"Detalles del evento (11196746555240549)"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Before Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+   ,{
+      "id":"11203285695240566"
+     ,"Identification":{
+        "Name":"Process form Detalles del evento"
+       ,"Type":"Form - Automatic Row Processing (DML)"
+       ,"Form Region":"Detalles del evento (11196746555240549)"
+      }
+     ,"Settings":{
+        "Target Type":"Region Source"
+       ,"Prevent Lost Updates":true
+       ,"Lock Row":"Yes"
+       ,"Return Primary Key(s) after Insert":true
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+    }
+   ,{
+      "id":"11203696286240566"
+     ,"Identification":{
+        "Name":"Close Dialog"
+       ,"Type":"Close Dialog"
+      }
+     ,"Execution Options":{
+        "Sequence":30
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"CANCEL (11200255584240560)"
+       ,"Type":"Request is contained in Value"
+       ,"Value":"CREATE,SAVE,DELETE"
+      }
+    }
+   ,{
+      "id":"11217253135301342"
+     ,"Identification":{
+        "Name":"Eliminar renta"
+       ,"Type":"Execute Code"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"UPDATE BICI\nSET ESTADO = \u0027DISPONIBLE\u0027\nWHERE id = :P30_ID_BICI;"
+      }
+     ,"Execution Options":{
+        "Sequence":20
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Success Message":{
+        "Success Message":"Renta eliminada"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"DELETE (11201606772240564)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"11209117253257606"
+     ,"Identification":{
+        "Name":"go 8"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:8:\u0026SESSION.::\u0026DEBUG.:8::\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"8"
+         ,"Clear Cache":"8"
+        }
+      }
+    }
+   ,{
+      "id":"11228531407411630"
+     ,"Identification":{
+        "Name":"Go out"
+      }
+     ,"Execution Options":{
+        "Sequence":30
+       ,"Point":"Before Header"
+      }
+     ,"Behavior":{
+        "Type":"URL Identified by Item (Redirect)"
+       ,"Item":"\u0026LOGOUT_URL."
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT * FROM HK22_usuario WHERE upper(EMAIL) = :APP_USER;"
+      }
+    }
+  ]
+}

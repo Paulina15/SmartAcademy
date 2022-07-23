@@ -1,0 +1,40 @@
+[
+  {
+    "id":"8090091762772779"
+   ,"Identification":{
+      "Name":"Application Express Accounts"
+    }
+   ,"Settings":{
+      "Type":"Oracle APEX Accounts"
+    }
+   ,"Session Not Valid":{
+      "Redirect to":"Login Page"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+ ,{
+    "id":"10690790046873278"
+   ,"Identification":{
+      "Name":"hkAuth"
+    }
+   ,"Settings":{
+      "Type":"Custom"
+     ,"Authentication Function Name":"hk.F_LOGIN"
+     ,"Enable Legacy Authentication Attributes":false
+    }
+   ,"Session Not Valid":{
+      "Redirect to":"Login Page"
+    }
+   ,"Login Processing":{
+      "Switch in Session":false
+    }
+   ,"Real Application Security":{
+      "RAS Mode":"Disabled"
+    }
+  }
+]

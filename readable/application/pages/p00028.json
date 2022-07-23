@@ -1,0 +1,346 @@
+{
+  "id":"28"
+ ,"Identification":{
+    "Name":"Actualizar contrase\u00F1a"
+   ,"Alias":"ACTUALIZACI\u00D3N-CONTRASE\u00D1A"
+   ,"Title":"Poner nueva contrase\u00F1a"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Normal"
+   ,"Page Template":"Login (8101739991772787)"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Is Public"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"10858919235201015"
+     ,"Identification":{
+        "Title":"Actualizaci\u00F3n de contrase\u00F1a"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"                    \u003Cdiv style = \"text-align:center; color:white;\"\u003E\n                        \u003Cdiv style=\"font-size:1.3rem;\"\u003E\n                        \t\u003Cb\u003E\n                            Felicidades, ya est\u00E1 verificada tu cuenta.\u003Cbr\u003E\n                            \u003Cu\u003E Cambia tu contrase\u00F1a. \u003C\/u\u003E\n                            \u003C\/b\u003E                   \n                        \u003C\/div\u003E\n                    \u003C\/div\u003E\n                "
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"10860021044201026"
+     ,"Identification":{
+        "Name":"P28_EMAIL"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Email"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"Leading and Trailing"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Actualizaci\u00F3n de contrase\u00F1a (10858919235201015)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"10860199640201027"
+     ,"Identification":{
+        "Name":"P28_NUEVA_CONTRASENA"
+       ,"Type":"Password"
+      }
+     ,"Label":{
+        "Label":"Nueva Contrase\u00F1a"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submit when Enter pressed":false
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Actualizaci\u00F3n de contrase\u00F1a (10858919235201015)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"10860267945201028"
+     ,"Identification":{
+        "Name":"P28_CONFIRMAR_CONTRASENA"
+       ,"Type":"Password"
+      }
+     ,"Label":{
+        "Label":"Confirmar Contrase\u00F1a"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Submit when Enter pressed":true
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"Actualizaci\u00F3n de contrase\u00F1a (10858919235201015)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"10859193633201017"
+     ,"Identification":{
+        "Button Name":"Aceptar"
+       ,"Label":"Aceptar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Actualizaci\u00F3n de contrase\u00F1a (10858919235201015)"
+       ,"Position":"CREATE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+       ,"Database Action":"SQL UPDATE action"
+      }
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"10860377090201029"
+     ,"Identification":{
+        "Name":"Validar contrase\u00F1as"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Expression"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Expression":":P28_NUEVA_CONTRASENA = :P28_CONFIRMAR_CONTRASENA"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Las contrase\u00F1as no coinciden"
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P28_NUEVA_CONTRASENA (10860199640201027)"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"10859901103201025"
+     ,"Identification":{
+        "Name":"Reseteo"
+       ,"Type":"Execute Code"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Language":"PL\/SQL"
+       ,"PL\/SQL Code":"                    BEGIN\n                        UPDATE USUARIO\n                           SET PASSWORD = toolkit.encrypt(:P28_CONFIRMAR_CONTRASENA)\n                           \n                         WHERE EMAIL = :P28_EMAIL;\n                    \n                        APEX_APPLICATION.g_print_success_message :=\n                            \u0027contrase\u00F1a actualizada\u0027;\n                    EXCEPTION\n                        WHEN OTHERS\n                        THEN\n                            APEX_APPLICATION.g_print_success_message := \u0027Contrase\u00F1a no actualizada\u0027;\n                    END;\n               \n               "
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"Aceptar (10859193633201017)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"11484731202871520"
+     ,"Identification":{
+        "Name":"Redireccion"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9999:\u0026SESSION.::\u0026DEBUG.::P9999_USERNAME:\u0026P28_EMAIL.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"9999"
+         ,"Values":{
+            "P9999_USERNAME":"\u0026P28_EMAIL."
+          }
+        }
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"Aceptar (10859193633201017)"
+      }
+    }
+  ]
+}

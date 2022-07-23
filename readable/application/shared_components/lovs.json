@@ -1,0 +1,147 @@
+[
+  {
+    "id":"18619304962445816"
+   ,"Identification":{
+      "Name":"HK22_EQUIPO.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_EQUIPO"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"18561924629629048"
+   ,"Identification":{
+      "Name":"HK22_CLASE.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_CLASE"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"1252887044563637"
+   ,"Identification":{
+      "Name":"HK22_AREA.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_AREA"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"1253554820563639"
+   ,"Identification":{
+      "Name":"HK22_INSTITUCION.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_INSTITUCION"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"1269941554768791"
+   ,"Identification":{
+      "Name":"HK22_CURSO.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_CURSO"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"2185233627754007"
+   ,"Identification":{
+      "Name":"HK22_USUARIO.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_USUARIO"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"2464992289900314"
+   ,"Identification":{
+      "Name":"HK22_MODELO_MASCOTA.NOMBRE"
+    }
+   ,"Source":{
+      "Location":"Local Database"
+     ,"Type":"Table \/ View"
+     ,"Table Owner":"Parsing Schema"
+     ,"Table Name":"HK22_MODELO_MASCOTA"
+    }
+   ,"Column Mapping":{
+      "Return":"ID"
+     ,"Display":"NOMBRE"
+     ,"Default Sort":"NOMBRE"
+     ,"Sort Direction":"Ascending (Nulls Last)"
+    }
+  }
+ ,{
+    "id":"8283375137772877"
+   ,"Identification":{
+      "Name":"LOGIN_REMEMBER_USERNAME"
+    }
+   ,"Source":{
+      "Location":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"8283638298772878"
+       ,"Entry":{
+          "Sequence":10
+         ,"Display":"Recordar informaci\u00F3n"
+         ,"Return":"Y"
+        }
+      }
+    ]
+  }
+]

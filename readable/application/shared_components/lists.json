@@ -1,0 +1,513 @@
+[
+  {
+    "id":"8090823729772780"
+   ,"Identification":{
+      "Name":"Navigation Menu"
+     ,"Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"18981329530431076"
+       ,"Label":{
+          "Label":"Instituciones"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-university"
+        }
+       ,"Layout":{
+          "Sequence":210
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "33"
+           ,"37"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"18536828940950871"
+       ,"Label":{
+          "Label":"Profesores"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-graduation-cap"
+        }
+       ,"Layout":{
+          "Sequence":240
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "48"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:48:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"48"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"18450693578205091"
+       ,"Label":{
+          "Label":"Equipos"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-handshake-o"
+        }
+       ,"Layout":{
+          "Sequence":260
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "51"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"51"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"1260103646563643"
+       ,"Label":{
+          "Label":"tabla curso"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-abacus"
+        }
+       ,"Layout":{
+          "Sequence":120
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "16"
+           ,"17"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:16:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"16"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"Rows returned"
+         ,"SQL Query":"SELECT * FROM hk22_usuario \r\nWHERE upper(EMAIL) = :APP_USER\r\nAND TIPO=\u0027MAESTRO\u0027;"
+        }
+      }
+     ,{
+        "id":"1276735768768798"
+       ,"Label":{
+          "Label":"tabla clase"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-apex"
+        }
+       ,"Layout":{
+          "Sequence":130
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "18"
+           ,"32"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:18:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"18"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"Rows returned"
+         ,"SQL Query":"SELECT * FROM hk22_usuario \r\nWHERE upper(EMAIL) = :APP_USER\r\nAND TIPO=\u0027MAESTRO\u0027;"
+        }
+      }
+     ,{
+        "id":"2193902191754024"
+       ,"Label":{
+          "Label":"Mascota"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-paw"
+        }
+       ,"Layout":{
+          "Sequence":150
+        }
+       ,"Is Current":{
+          "Type":"Pages"
+         ,"Pages":[
+            "3"
+           ,"25"
+          ]
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:3:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"3"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"8286882609772884"
+       ,"Label":{
+          "Label":"Home"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-home"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:1:\u0026APP_SESSION.::\u0026DEBUG.:"
+           ,"Page":"1"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"8278227533772866"
+   ,"Identification":{
+      "Name":"Navigation Bar"
+     ,"Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"2550825586410672"
+       ,"Label":{
+          "Label":"Cuenta"
+        }
+       ,"Layout":{
+          "Sequence":25
+         ,"Parent Entry":"\u0026APP_USER. (8288396128772886)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:8:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"8"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"Rows returned"
+         ,"SQL Query":"SELECT * FROM HK22_usuario \nWHERE upper(EMAIL) = :APP_USER"
+        }
+      }
+     ,{
+        "id":"8288396128772886"
+       ,"Label":{
+          "Label":"\u0026APP_USER."
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"#"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"2.":"has-username"
+        }
+       ,"Server-side Condition":{
+          "Type":"Rows returned"
+         ,"SQL Query":"SELECT * FROM HK22_usuario \nWHERE upper(EMAIL) = :APP_USER"
+        }
+      }
+     ,{
+        "id":"8288894871772886"
+       ,"Label":{
+          "Label":"---"
+        }
+       ,"Layout":{
+          "Sequence":20
+         ,"Parent Entry":"\u0026APP_USER. (8288396128772886)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"separator"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"8289292696772887"
+       ,"Label":{
+          "Label":"Cerrar sesi\u00F3n"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-sign-out"
+        }
+       ,"Layout":{
+          "Sequence":30
+         ,"Parent Entry":"\u0026APP_USER. (8288396128772886)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"\u0026LOGOUT_URL."
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"Rows returned"
+         ,"SQL Query":"SELECT * FROM HK22_usuario \nWHERE upper(EMAIL) = :APP_USER\n"
+        }
+      }
+     ,{
+        "id":"11447482904730478"
+       ,"Label":{
+          "Label":"Registrate"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:9999:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"9999"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"No Rows returned"
+         ,"SQL Query":"SELECT * FROM HK22_usuario \nWHERE upper(EMAIL) = :APP_USER"
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"8312798809864277"
+   ,"Identification":{
+      "Name":"Informaci\u00F3n"
+     ,"Type":"SQL Query"
+    }
+   ,"Source":{
+      "SQL Query":"select \n\nnull,\n\nENTRY_TEXT, \n\nENTRY_TARGET, \n\n\u0027YES\u0027 AS is_current,\n\nNVL(ENTRY_IMAGE,ENTRY_ATTRIBUTE_01) AS LOGO_IMAGE,\n\nSUBSTR(ENTRY_TARGET, INSTR(ENTRY_TARGET, \u0027:\u0027, 1, 1)+1 , INSTR(ENTRY_TARGET, \u0027:\u0027, 1, 2) - INSTR(ENTRY_TARGET, \u0027:\u0027, 1, 1)-1 )  AS PAGE_ID\n\nfrom APEX_APPLICATION_LIST_ENTRIES\n\nwhere APPLICATION_ID = 100;\n"
+    }
+  }
+ ,{
+    "id":"8919846843676730"
+   ,"Identification":{
+      "Name":"info"
+     ,"Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"18472166830376209"
+       ,"Label":{
+          "Label":"Equipos"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-handshake-o"
+        }
+       ,"Layout":{
+          "Sequence":40
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"51"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"18471822262365012"
+       ,"Label":{
+          "Label":"Eventos"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-calendar-heart"
+        }
+       ,"Layout":{
+          "Sequence":50
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"51"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"8920401810676733"
+       ,"Label":{
+          "Label":"Profesores"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user-graduate"
+        }
+       ,"Layout":{
+          "Sequence":20
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:48:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"48"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+     ,{
+        "id":"8920876911676733"
+       ,"Label":{
+          "Label":"Instituciones"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-suitcase"
+        }
+       ,"Layout":{
+          "Sequence":30
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:33:\u0026SESSION.::\u0026DEBUG.::::"
+           ,"Page":"33"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"9867061480401828"
+   ,"Identification":{
+      "Name":"default_events"
+     ,"Type":"Static Values"
+    }
+  }
+]

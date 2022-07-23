@@ -1,0 +1,504 @@
+{
+  "id":"13"
+ ,"Identification":{
+    "Name":"Clase"
+   ,"Alias":"CLASE"
+   ,"Title":"clase"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":".a-CardView{\n    border-style: none;\n    background-color: transparent;\n    box-shadow: none;\n}\n.a-CardView-badge{\n    background-color: transparent;\n}\n.a-TMV-w-scroll{\n    overflow: hidden;\n}\n.info{\n    background-color: rgb(0, 0, 0);\n}\n.renta{\n    margin-bottom: 20%;\n}\n.t-Region-buttons{\n    display: table;\n    margin: auto;\n}\n.t-Body-contentInner{\n    padding: 0%;\n    overflow: hidden;\n}\n\n.datos .title{\n    font-size: 20pt;\n    font-weight: bold;\n}\n.aviso{\n    background-color: rgb(255, 255, 255);\n    border-radius:  2em;\n    border-color: rgb(4, 146, 47) ;\n    border-style: solid;\n    border-width: 3pt;\n    color: rgb(4, 146, 47);\n    display: table;\n    height: 30%;\n    margin: auto;\n    overflow: hidden;\n    padding: 3%;\n    margin-bottom: 2%;\n    align-items: center;\n    text-align: center;\n}\n.aviso div{\n    font-weight: bold;\n    padding-top: 5%;\n}\n\n.aviso2 div{\n    font-weight: bold;\n    padding-top: 5%;\n}\n.mapa .t-Report-cell{\n    padding: 0%;\n}\n.mapa thead{\n    display: none;\n}\n\n.avisoMenores{\n    text-align: center;\n    margin-top: 4%;\n    margin-bottom: 1%;\n}\n\np {\n    padding: 0px;\n    margin: 0px;\n}\n\nh3{\n    padding-bottom: 0px;\n    margin-bottom: 0px;\n}\n"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"2147576127075347"
+     ,"Identification":{
+        "Title":"aviso"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"Clase terminada"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"select *\nfrom hk22_asistencia \nWHERE upper(EMAIL) = :APP_USER\n    and ID_CLASE = :P13_ID_1"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"8999063224999239"
+     ,"Identification":{
+        "Title":"Video"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select link\nfrom HK22_CLASE\nwhere id= :P13_id_1"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Column CSS Classes":[
+          "mapa"
+        ]
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"margin-top-none"
+         ,"margin-bottom-none"
+         ,"margin-left-none"
+         ,"margin-right-none"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "t-Report--altRowsDefault"
+           ,"t-Report--rowHighlightOff"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"132860299146359"
+         ,"Identification":{
+            "Column Name":"LINK"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Link"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Column Formatting":{
+            "HTML Expression":"\u003Ciframe width=\"885\" height=\"498\" src=\"#LINK#\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003E\n\u003C\/iframe\u003E"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"17482968774597788"
+     ,"Identification":{
+        "Title":"evento"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select *\nfrom hk22_clase\nwhere id= :P13_id_1"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"4"
+       ,"Column CSS Classes":[
+          "datos"
+        ]
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--hiddenOverflow"
+         ,"margin-top-md"
+         ,"margin-bottom-none"
+         ,"margin-left-md"
+         ,"margin-right-none"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"8998813277999237"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Title":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u003Cspan class=\"title\"\u003E\u0026NOMBRE.\u003C\/span\u003E"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u003Ch4\u003Eclase numero \u0026NUM_CLASE.\u003C\/br\u003E\n    \u0026DESCRIPCION. \u003C\/br\u003E\n    \u003C\/h4\u003E"
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"No Media"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"132490379146355"
+     ,"Identification":{
+        "Name":"P13_ID"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Region":"evento (17482968774597788)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"9025937013049389"
+     ,"Identification":{
+        "Name":"P13_ID_1"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"evento (17482968774597788)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Security":{
+        "Session State Protection":"Checksum Required - Session Level"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+   ,{
+      "id":"9026366129049389"
+     ,"Identification":{
+        "Name":"P13_NOMBRE"
+       ,"Type":"Hidden"
+      }
+     ,"Settings":{
+        "Value Protected":true
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Region":"evento (17482968774597788)"
+       ,"Position":"BODY"
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Session (Disk)"
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"1492289264559848"
+     ,"Identification":{
+        "Button Name":"terminada"
+       ,"Label":"Terminada"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"evento (17482968774597788)"
+       ,"Position":"BELOW_BOX"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Horizontal Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"select *\nfrom hk22_asistencia \nWHERE upper(EMAIL) = :APP_USER\n    and ID_CLASE = :P13_ID_1"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"1492372165559849"
+     ,"Identification":{
+        "Name":"New"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Button"
+       ,"Button":"terminada (1492289264559848)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"1492508038559850"
+         ,"Identification":{
+            "Action":"Execute Server-side Code"
+          }
+         ,"Settings":{
+            "Language":"PE.PROPERTY.SOURCE_SNIPPET_LANG.LOV.PLSQL.D"
+           ,"PL\/SQL Code":"INSERT INTO HK22_ASISTENCIA\n(ID_USUARIO, ID_CLASE, EMAIL)\nSELECT id as ID_USUARIO,\n       :P13_ID_1 as ID_CURSO,\n       :APP_USER as EMAIL\nFROM HK22_usuario \nWHERE upper(EMAIL) = :APP_USER;"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"New (1492372165559849)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"8981158529890761"
+     ,"Identification":{
+        "Name":"Go To Page 13"
+      }
+     ,"Execution Options":{
+        "Sequence":1
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:13:\u0026SESSION.::\u0026DEBUG.:13:P13_ID_1:\u0026P13_ID_1.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"13"
+         ,"Clear Cache":"13"
+         ,"Values":{
+            "P13_ID_1":"\u0026P13_ID_1."
+          }
+        }
+      }
+    }
+   ,{
+      "id":"10841952008034725"
+     ,"Identification":{
+        "Name":"Go out"
+      }
+     ,"Execution Options":{
+        "Sequence":20
+       ,"Point":"Before Header"
+      }
+     ,"Behavior":{
+        "Type":"URL Identified by Item (Redirect)"
+       ,"Item":"\u0026LOGOUT_URL."
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT * FROM HK22_usuario WHERE upper(EMAIL) = :APP_USER;"
+      }
+    }
+  ]
+}

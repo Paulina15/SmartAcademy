@@ -1,0 +1,140 @@
+{
+  "id":"104"
+ ,"Identification":{
+    "Name":"talent22"
+   ,"Alias":"TALENT103104103"
+   ,"Version":"Release 1.0"
+  }
+ ,"Row Search":{
+    "Tokenize":false
+  }
+ ,"Availability":{
+    "Status":"Available with Developer Toolbar"
+   ,"Build Status":"Run and Build Application"
+  }
+ ,"Error Handling":{
+    "Default Display Location":"Inline with Field and in Notification"
+  }
+ ,"Report Printing":{
+    "Type":"Native Printing"
+  }
+ ,"Advanced":{
+    "Friendly URLs":true
+   ,"Allow Feedback":true
+   ,"Logging":true
+   ,"Debugging":true
+   ,"Compatibility Mode":"21.2 \/ 22.1"
+  }
+ ,"Authentication":{
+    "Public User":"APEX_PUBLIC_USER"
+   ,"Authentication Scheme":"hkAuth (10690790046873278)"
+  }
+ ,"Authorization":{
+    "Source for Role or Group Schemes":"Access Control User Role Assignments"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Disabled"
+  }
+ ,"Session State Protection":{
+    "Enabled":true
+  }
+ ,"Security":{
+    "Deep Linking":"Disabled"
+   ,"Browser Cache":"Disabled"
+   ,"Embed in Frames":"Deny"
+   ,"Referrer Policy":"strict-origin"
+   ,"HTML Escaping Mode":"Extended"
+  }
+ ,"Database Session":{
+    "Parsing Schema":"SACALABICI"
+  }
+ ,"Globalization":{
+    "Primary Language":"Spanish (Mexico) (es-mx)"
+   ,"Document Direction":"Left-To-Right"
+   ,"Language Derived From":"Application Primary Language"
+   ,"Automatic Time Zone":true
+   ,"Automatic CSV Encoding":true
+  }
+ ,"Application Format Masks":{
+    "Date":"DD\/MM\/YYYY"
+   ,"Date Time":"DD\/MM\/YYYY"
+   ,"Timestamp":"DD\/MM\/YYYY HH24:MI"
+   ,"Timestamp Time Zone":"DD\/MM\/YYYY HH24:MI"
+  }
+ ,"Character Value Comparison":{
+    "Behavior":"Database session NLS setting (default)"
+  }
+ ,"Logo":{
+    "Type":"Image and Text"
+   ,"Image URL":"#APP_FILES#app-103-logo.png"
+   ,"Text":"Smart Academy"
+  }
+ ,"Progressive Web App":{
+    "Enable":true
+   ,"Installable":false
+   ,"Display":"Standalone"
+   ,"Screen Orientation":"Any"
+   ,"iOS Status Bar Style":"Translucent"
+  }
+ ,"Substitutions":[
+    {
+      "id":"30137121571976060"
+     ,"Identification":{
+        "Name":"APP_NAME"
+      }
+     ,"Value":{
+        "Static Value":"talent22"
+      }
+    }
+  ]
+ ,"User Interfaces":[
+    {
+      "id":"8278525726772866"
+     ,"Identification":{
+        "Name":"Desktop"
+      }
+     ,"Navigation":{
+        "Home URL":{
+          "url":"f?p=\u0026APP_ID.:1:\u0026SESSION."
+         ,"Page":"1"
+        }
+       ,"Login URL":{
+          "url":"f?p=\u0026APP_ID.:LOGIN:\u0026APP_SESSION.::\u0026DEBUG.:::"
+         ,"Page":"LOGIN"
+        }
+      }
+     ,"Navigation Menu":{
+        "List Template":"Side Navigation Menu (8241531044772848)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TreeNav--styleA"
+         ,"js-navCollapsed--hidden"
+        ]
+       ,"List Position":"Side"
+       ,"List":"Navigation Menu (8090823729772780)"
+      }
+     ,"Navigation Bar":{
+        "Implementation":"List"
+       ,"List":"Navigation Bar (8278227533772866)"
+       ,"List Template":"Navigation Bar (8241170273772848)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"JavaScript":{
+        "Include jQuery Migrate":false
+      }
+     ,"CSS":{
+        "File URLs":[
+          "#APP_FILES#app-icon.css?version=#APP_VERSION#"
+        ]
+      }
+     ,"Attributes":{
+        "Theme":"Universal Theme (42)"
+       ,"Global Page":"0"
+       ,"Enable End Users to choose Theme Style":false
+       ,"Add \"Built with APEX\" to Footer":false
+      }
+    }
+  ]
+}

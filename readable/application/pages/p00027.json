@@ -1,0 +1,513 @@
+{
+  "id":"27"
+ ,"Identification":{
+    "Name":"Olvid\u00E9 mi contrase\u00F1a"
+   ,"Alias":"OLVID\u00C9-MI-CONTRASE\u00D1A"
+   ,"Title":"Olvid\u00E9 mi contrase\u00F1a"
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":".titulo{\n    font-size: 30pt;\n}\n\n.label1{\n    font-size: 20pt;\n}"
+  }
+ ,"Security":{
+    "Authentication":"Page Is Public"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"10857890787201004"
+     ,"Identification":{
+        "Title":"T\u00EDtulo"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cp class=\"titulo\"\u003E Recuperar contrase\u00F1a \u003C\/p\u003E\n\t\t\u003Chr\u003E\u003Cbr\u003E\u003Cbr\u003E\n"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"10858037560201006"
+     ,"Identification":{
+        "Title":"Formulario"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"10858437401201010"
+     ,"Identification":{
+        "Title":"INGRESA LOS SIGUIENTES DATOS:"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"Formulario (10858037560201006)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+  ]
+ ,"Page Items":[
+    {
+      "id":"10858254418201008"
+     ,"Identification":{
+        "Name":"P27_EMAIL"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Correo electr\u00F3nico"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtype":"E-Mail"
+       ,"Trim Spaces":"None"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":false
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"INGRESA LOS SIGUIENTES DATOS: (10858437401201010)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"fa-envelope-o"
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":100
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Restricted - May not be set from browser"
+       ,"Store value encrypted in session state":false
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Introduce el correo al que se le mandar\u00E1 la verificaci\u00F3n para cambiar la contrase\u00F1a."
+      }
+    }
+   ,{
+      "id":"11484012354871513"
+     ,"Identification":{
+        "Name":"P27_PREGUNTA"
+       ,"Type":"Select List"
+      }
+     ,"Label":{
+        "Label":"Pregunta de seguridad"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Page Action on Selection":"None"
+       ,"Allow Multi Selection":false
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Region":"INGRESA LOS SIGUIENTES DATOS: (10858437401201010)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Height":1
+      }
+     ,"Validation":{
+        "Value Required":true
+      }
+     ,"List of Values":{
+        "Type":"Static Values"
+       ,"Static Values":"STATIC:\u00BFCu\u00E1l fue\/es el nombre de tu primer mascota?;\u00BFCu\u00E1l fue\/es el nombre de tu primer mascota?,\u00BFCu\u00E1l fue el nombre de la primera escuela a la que fuiste?;\u00BFCu\u00E1l fue el nombre de la primera escuela a la que fuiste?,\u00BFCu\u00E1l es el nombre de tu prima mayor?;\u00BFCu\u00E1l es el nombre de tu prima mayor?"
+       ,"Display Extra Values":true
+       ,"Display Null Value":false
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Elige tu pregunta de seguridad que elegiste al crear tu cuenta."
+      }
+    }
+   ,{
+      "id":"11484150386871514"
+     ,"Identification":{
+        "Name":"P27_RESPUESTA"
+       ,"Type":"Text Field"
+      }
+     ,"Label":{
+        "Label":"Respuesta"
+       ,"Alignment":"Left"
+      }
+     ,"Settings":{
+        "Subtype":"Text"
+       ,"Trim Spaces":"Leading and Trailing"
+       ,"Text Case":"NO CHANGE"
+       ,"Submit when Enter pressed":true
+       ,"Disabled":false
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Region":"INGRESA LOS SIGUIENTES DATOS: (10858437401201010)"
+       ,"Position":"BODY"
+       ,"Alignment":"Left"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Label Column Span":"Page Template Default"
+      }
+     ,"Appearance":{
+        "Template":"Optional - Floating (8251284600772853)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Width":30
+      }
+     ,"Validation":{
+        "Value Required":true
+       ,"Maximum Length":100
+      }
+     ,"Advanced":{
+        "Warn on Unsaved Changes":"Page Default"
+      }
+     ,"Source":{
+        "Type":"Null"
+       ,"Used":"Only when current value in session state is null"
+       ,"Maintain Session State":"Per Request (Memory Only)"
+      }
+     ,"Quick Picks":{
+        "Show Quick Picks":false
+      }
+     ,"Security":{
+        "Session State Protection":"Unrestricted"
+       ,"Store value encrypted in session state":true
+       ,"Restricted Characters":"All characters can be saved."
+      }
+     ,"Help":{
+        "Help Text":"Ingresa tu respuesta a tu pregunta de seguridad."
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"10858304020201009"
+     ,"Identification":{
+        "Button Name":"Aceptar"
+       ,"Label":"Aceptar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"INGRESA LOS SIGUIENTES DATOS: (10858437401201010)"
+       ,"Position":"CREATE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"10858532201201011"
+     ,"Identification":{
+        "Button Name":"Cancelar"
+       ,"Label":"Cancelar"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"INGRESA LOS SIGUIENTES DATOS: (10858437401201010)"
+       ,"Position":"CLOSE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:9999:\u0026SESSION.::\u0026DEBUG.:::"
+         ,"Page":"9999"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Validations":[
+    {
+      "id":"10858614872201012"
+     ,"Identification":{
+        "Name":"Usuario existe"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+      }
+     ,"Validation":{
+        "Type":"Rows returned"
+       ,"SQL Query":"select EMAIL\n from HK22_USUARIO \n where upper(email) = upper(:P27_EMAIL);"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"El usuario no existe."
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P27_EMAIL (10858254418201008)"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P27_EMAIL"
+      }
+    }
+   ,{
+      "id":"11484462013871517"
+     ,"Identification":{
+        "Name":"Validar pregunta"
+      }
+     ,"Execution Options":{
+        "Sequence":30
+      }
+     ,"Validation":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT PREGUNTA\nFROM HK22_USUARIO\nWHERE upper(pregunta) = upper(:P27_PREGUNTA);"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Esa no es la pregunta que hab\u00EDas elegido al crear tu cuenta"
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P27_PREGUNTA (11484012354871513)"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P27_PREGUNTA"
+      }
+    }
+   ,{
+      "id":"11484591245871518"
+     ,"Identification":{
+        "Name":"Validad respuesta"
+      }
+     ,"Execution Options":{
+        "Sequence":40
+      }
+     ,"Validation":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT RESPUESTA\nFROM HK22_USUARIO\nWHERE upper(respuesta) = upper(:P27_RESPUESTA);"
+       ,"Always Execute":false
+      }
+     ,"Error":{
+        "Error Message":"Respuesta incorrecta"
+       ,"Display Location":"Inline with Field and in Notification"
+       ,"Associated Item":"P27_RESPUESTA (11484150386871514)"
+      }
+     ,"Server-side Condition":{
+        "Type":"Item is NOT NULL"
+       ,"Item":"P27_RESPUESTA"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"11484693302871519"
+     ,"Identification":{
+        "Name":"Redireccionar"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"After Processing"
+      }
+     ,"Behavior":{
+        "Type":"Page or URL (Redirect)"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:28:\u0026SESSION.::\u0026DEBUG.::P28_EMAIL:\u0026P27_EMAIL.\u0026success_msg=#SUCCESS_MSG#"
+         ,"Page":"28"
+         ,"Values":{
+            "P28_EMAIL":"\u0026P27_EMAIL."
+          }
+        }
+      }
+     ,"Server-side Condition":{
+        "When Button Pressed":"Aceptar (10858304020201009)"
+      }
+    }
+  ]
+}

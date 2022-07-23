@@ -1,0 +1,5085 @@
+{
+  "id":"8"
+ ,"Identification":{
+    "Name":"Usuario "
+   ,"Alias":"USUARIO"
+   ,"Title":"Usuario "
+  }
+ ,"Appearance":{
+    "User Interface":"Desktop (8278525726772866)"
+   ,"Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"CSS":{
+    "Inline":".t-Body-contentInner{\n    padding: 0%;\n}\n.contet_user{\n    background-color: rgb(59, 59, 59);\n    margin: 0%;\n}\n.report_data{\n    background-color: rgb(59, 59, 59);\n}\n.region_default{\n    padding: 0px;\n    margin: 0px;\n}\n.boton{\n    margin-left: 1em;\n}\nh1{\n    margin: 0px;\n    padding: 0px;\n}\n\n.image_user_content{\n    width: 50%;\n    margin: 0% 25% 5% 25%;\n}\n.image_user{\n    width: 80%;\n    margin: auto;\n}\n\n.content_rents{\n    padding: 0px;\n    border-radius: 15px;\n}\n\n.mis_rentas_titulo{\n    border: none;\n    padding: 0px;\n    margin: 0px;\n}\n\n.filas_mis_rentas{\n    background-color: rgb(59, 59, 59);\n    text-align: center;\n    font-style: bold;\n}\n\/*******************************************\/\n.a-CardView {\n    border-style: none;\n    box-shadow: none;\n}\n.renta{\n    margin: auto auto 6% auto;\n    display: table;\n    width: -webkit-fill-available;\n}\n.renta .t-Report-wrap{\n    width: -webkit-fill-available;\n}\n.t-Report-report{\n    width:-webkit-fill-available;\n}\n\/*+++++++++++++++++++++++++++++++++++++++++++++++++++*\/\n\n.apex-rds-slider{\n    display: none;\n}\n.titulo{\n    margin-left: 2%;\n    margin-right: 2%;\n}\n.imag img{\n    height: 20em;\n}\n.contenedor{\n    margin: auto;\n    background-color: transparent;\n    padding: 5%;\n}\n.linea{\n    margin: 40%;\n    width: 70%;\n}\n.lineah{\n    background-color: rgb(0, 116, 188);\n    margin-bottom: 0px;\n}\n.mensajes{\n    margin: 0%;\n    height: 600px;\n}"
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"19031899972978435"
+     ,"Identification":{
+        "Title":"LINEAV"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\n\u003Cimg class=\"linea\" src=\"#APP_FILES#linea\" atl=\"user_image\"\u003E"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"1"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027ESTUDIANTE\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"19031770974978434"
+     ,"Identification":{
+        "Title":"area_tutor"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select a.nombre\nfrom hk22_area a\njoin hk22_tutor t\non a.id =t.id_area\nWHERE upper(t.correo) = :APP_USER;"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"areas _tutor (19031548921978432)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (8165136647772814)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "contenedor"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--staticRowColors"
+           ,"t-Report--rowHighlightOff"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"Selecciona tus \u00E1reas de inter\u00E9s"
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"19031672404978433"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"\u00C1reas de inter\u00E9s:"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":false
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":false
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"19031548921978432"
+     ,"Identification":{
+        "Title":"areas _tutor"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027TUTOR\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"19031272008978429"
+     ,"Identification":{
+        "Title":"Mensajes"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":140
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"4"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"CSS Classes":[
+          "mensajes"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"19031201244978428"
+     ,"Identification":{
+        "Title":"New"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Mensajes (19031272008978429)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (8151651230772808)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"19031115691978427"
+     ,"Identification":{
+        "Title":"Todos"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select m.id, m.NOMBRE as asunto, u.nombre as de, u.id as id_res\nfrom HK22_MENSAJE m\njoin hk22_usuario u\non ID_EMISOR= u.id\njoin hk22_usuario u2\non ID_RECEPTOR= u2.id\nwhere upper(u2.EMAIL) = :APP_USER"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"New (19031201244978428)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"19030818359978424"
+         ,"Identification":{
+            "Column Name":"ASUNTO"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Asunto"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.:CR,26:P26_ID,P26_ID_RECEPTOR:#ID#,#ID_RES#"
+             ,"Page":"26"
+             ,"Clear Cache":"CR,26"
+             ,"Values":{
+                "P26_ID":"#ID#"
+               ,"P26_ID_RECEPTOR":"#ID_RES#"
+              }
+            }
+           ,"Link Text":"#ASUNTO#"
+          }
+         ,"Column Formatting":{
+            "CSS Classes":[
+              "asunto"
+            ]
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"19029469712978411"
+         ,"Identification":{
+            "Column Name":"DE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"De"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787258029502055"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18786853090502051"
+         ,"Identification":{
+            "Column Name":"ID_RES"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"19030951688978426"
+     ,"Identification":{
+        "Title":"No le\u00EDdo "
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select m.id, m.NOMBRE as asunto, u.nombre as de, u.id as id_res\nfrom HK22_MENSAJE m\njoin hk22_usuario u\non ID_EMISOR= u.id\njoin hk22_usuario u2\non ID_RECEPTOR= u2.id\nwhere upper(u2.EMAIL) = :APP_USER\nand m.VISTO=\u0027No\u0027"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"New (19031201244978428)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"19030616487978422"
+         ,"Identification":{
+            "Column Name":"ASUNTO"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Asunto"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.:CR,26:P26_ID,P26_ID_RECEPTOR:#ID#,#ID_RES#"
+             ,"Page":"26"
+             ,"Clear Cache":"CR,26"
+             ,"Values":{
+                "P26_ID":"#ID#"
+               ,"P26_ID_RECEPTOR":"#ID_RES#"
+              }
+            }
+           ,"Link Text":"#ASUNTO#"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"19029531937978412"
+         ,"Identification":{
+            "Column Name":"DE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"De"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787333795502056"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18786952049502052"
+         ,"Identification":{
+            "Column Name":"ID_RES"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"19030918231978425"
+     ,"Identification":{
+        "Title":"le\u00EDdo "
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select m.id, m.NOMBRE as asunto, u.nombre as de, u.id as id_res\nfrom HK22_MENSAJE m\njoin hk22_usuario u\non ID_EMISOR= u.id\njoin hk22_usuario u2\non ID_RECEPTOR= u2.id\nwhere upper(u2.EMAIL) = :APP_USER\nand m.VISTO=\u0027Si\u0027"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"New (19031201244978428)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"19030335575978420"
+         ,"Identification":{
+            "Column Name":"ASUNTO"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Asunto"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.:CR,26:P26_ID,P26_ID_RECEPTOR:#ID#,#ID_RES#"
+             ,"Page":"26"
+             ,"Clear Cache":"CR,26"
+             ,"Values":{
+                "P26_ID":"#ID#"
+               ,"P26_ID_RECEPTOR":"#ID_RES#"
+              }
+            }
+           ,"Link Text":"#ASUNTO#"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"19029707972978413"
+         ,"Identification":{
+            "Column Name":"DE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"De"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787434469502057"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787111158502053"
+         ,"Identification":{
+            "Column Name":"ID_RES"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"19030091697978417"
+     ,"Identification":{
+        "Title":"enviados"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select m.id, m.NOMBRE as asunto, u.nombre as para, u.id as id_res\nfrom HK22_MENSAJE m\njoin hk22_usuario u\non ID_RECEPTOR= u.id\njoin hk22_usuario u2\non ID_EMISOR= u2.id\nwhere upper(u2.EMAIL) = :APP_USER"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"New (19031201244978428)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y (with next and previous links)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"19029997747978416"
+         ,"Identification":{
+            "Column Name":"ASUNTO"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Asunto"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:26:\u0026SESSION.::\u0026DEBUG.:CR,26:P26_ID,P26_ID_RECEPTOR:#ID#,#ID_RES#"
+             ,"Page":"26"
+             ,"Clear Cache":"CR,26"
+             ,"Values":{
+                "P26_ID":"#ID#"
+               ,"P26_ID_RECEPTOR":"#ID_RES#"
+              }
+            }
+           ,"Link Text":"#ASUNTO#"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"19029800020978414"
+         ,"Identification":{
+            "Column Name":"PARA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Para"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787570364502058"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18787125798502054"
+         ,"Identification":{
+            "Column Name":"ID_RES"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"18786775945502050"
+     ,"Identification":{
+        "Title":"tutor\u00EDas"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027TUTOR\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"18784657453502029"
+     ,"Identification":{
+        "Title":"kudos"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select u.id, count(k.id)\nfrom hk22_usuario u \nleft join hk22_kudos k\non k.ID_TUTOR= u.id\nWHERE upper(u.EMAIL) = :APP_USER\ngroup by u.id;"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"tutor\u00EDas (18786775945502050)"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"18784531050502028"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "CSS Classes":[
+            "contenedor"
+          ]
+        }
+       ,"Title":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"\u0026\"COUNT(K.ID)\". Corazones recibidos"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"Icon Class"
+         ,"Icon CSS Classes":"fa-heart"
+         ,"Icon Position":"Start"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"No Media"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+       ,"Actions":[
+          {
+            "id":"18784332966502026"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Crear nueva asesor\u00EDa "
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":10
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:40:\u0026SESSION.::\u0026DEBUG.:40:P40_ID_EMISOR:\u0026ID."
+               ,"Page":"40"
+               ,"Clear Cache":"40"
+               ,"Values":{
+                  "P40_ID_EMISOR":"\u0026ID."
+                }
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"18571728518737637"
+     ,"Identification":{
+        "Title":"New"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":90
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--scrollBody"
+        ]
+       ,"CSS Classes":[
+          "lineah"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027TUTOR\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"18569275028737612"
+     ,"Identification":{
+        "Title":"Mis Clases"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT C2.ID, C2.NOMBRE,C2.DESCRIPCION\nFROM HK22_MAESTRO M\nJOIN HK22_CURSO C\nON M.ID_CURSO= C.ID\nJOIN HK22_Clase C2\nON c2.ID_CURSO= C.ID\nJOIN HK22_USUARIO U\nON M.ID_USUARIO= U.ID\nWHERE UPPER(U.EMAIL)=:APP_USER"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"tabs (35407938374102052)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay asesor\u00EDas aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"18569146439737611"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:13:\u0026SESSION.::\u0026DEBUG.:CR,13:P13_ID_1:#ID#"
+             ,"Page":"13"
+             ,"Clear Cache":"CR,13"
+             ,"Values":{
+                "P13_ID_1":"#ID#"
+              }
+            }
+           ,"Link Text":"#NOMBRE#"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18333090057851760"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18332981239851759"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"2452643210649345"
+     ,"Identification":{
+        "Title":"mascota"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "contenedor"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027ESTUDIANTE\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"2452727359649346"
+     ,"Identification":{
+        "Title":"macota"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SElECT m.id,\n        m.nombre,\n        m.descripcion,\n        m.id_modelo,\n        mm.foto,\n        mm.nivel\nFROM HK22_MASCOTA m\njoin HK22_MODELO_MASCOTA mm\non mm.id=id_modelo\nWHERE upper(m.EMAIL) = :APP_USER;"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"mascota (2452643210649345)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"2452838672649347"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "CSS Classes":[
+            "contenedor"
+          ]
+         ,"Primary Key Column 1":"ID"
+        }
+       ,"Title":{
+          "Advanced Formatting":false
+         ,"Column":"NOMBRE"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":true
+         ,"HTML Expression":"Nivel: \u0026NIVEL."
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"BLOB Column"
+         ,"BLOB Column":"FOTO"
+         ,"Position":"First"
+         ,"Appearance":"Auto"
+         ,"Sizing":"Fit"
+         ,"CSS Classes":[
+            "imag"
+          ]
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+       ,"Actions":[
+          {
+            "id":"18570647136737626"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Adopciones"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":10
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:3:\u0026SESSION.::\u0026DEBUG.:CR,3::"
+               ,"Page":"3"
+               ,"Clear Cache":"CR,3"
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"2554652492749228"
+     ,"Identification":{
+        "Title":"Equipo"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":80
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "contenedor"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027ESTUDIANTE\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"2555705488749238"
+     ,"Identification":{
+        "Title":"New"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select e.ID,\n       e.NOMBRE,\n       e.DESCRIPCION,\n       e.FOTO\n  from HK22_EQUIPO e\n  join HK22_USUARIO u\n  on e.id= u.EQUIPO\n  WHERE upper(u.EMAIL) = :APP_USER;"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"Equipo (2554652492749228)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"2555732938749239"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "CSS Classes":[
+            "contenedor"
+          ]
+         ,"Primary Key Column 1":"ID"
+        }
+       ,"Title":{
+          "Advanced Formatting":false
+         ,"Column":"NOMBRE"
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"BLOB Column"
+         ,"BLOB Column":"FOTO"
+         ,"Position":"First"
+         ,"Appearance":"Auto"
+         ,"Sizing":"Fit"
+         ,"CSS Classes":[
+            "imag"
+          ]
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+       ,"Actions":[
+          {
+            "id":"18570961808737629"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Realizar test de equipo"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":10
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.:51::"
+               ,"Page":"51"
+               ,"Clear Cache":"51"
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+             ,"CSS Classes":[
+                "boton"
+              ]
+            }
+          }
+         ,{
+            "id":"18570844026737628"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Ver Equipos"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":20
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.:51::"
+               ,"Page":"51"
+               ,"Clear Cache":"51"
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+             ,"CSS Classes":[
+                "boton"
+              ]
+            }
+          }
+         ,{
+            "id":"18570744965737627"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Ver Trofeos"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":30
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:51:\u0026SESSION.::\u0026DEBUG.:51::"
+               ,"Page":"51"
+               ,"Clear Cache":"51"
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+             ,"CSS Classes":[
+                "boton"
+              ]
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"11496555279172426"
+     ,"Identification":{
+        "Title":"Mis Cursos"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SElECT c.NOMBRE,\n        c.DESCRIPCION,\n        a.NOMBRE as area,\n        i.NOMBRE as institucion,\n        e.COMPLETADO\nFROM HK22_ESTUDIANTE e\njoin HK22_CURSO c\non e.ID_CURSO=c.id\njoin HK22_AREA a\non c.ID_AREA=a.id\nleft join HK22_INSTITUCION i\non c.ID_INSTITUCION=i.id\nwhere upper(e.EMAIL) = :APP_USER "
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"tabs (12455339134465156)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay clases aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"2453097893649349"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453189608649350"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453280303649351"
+         ,"Identification":{
+            "Column Name":"AREA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Area"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453368225649352"
+         ,"Identification":{
+            "Column Name":"INSTITUCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Institucion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":40
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453506837649353"
+         ,"Identification":{
+            "Column Name":"COMPLETADO"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Completado"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"11806175966519824"
+     ,"Identification":{
+        "Title":"content_estudent"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":100
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027ESTUDIANTE\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"11806429543519826"
+     ,"Identification":{
+        "Title":"user_content"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--scrollBody"
+         ,"margin-left-none"
+        ]
+       ,"CSS Classes":[
+          "contet_user"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"11822062526535359"
+     ,"Identification":{
+        "Title":"user_data"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT * \nFROM hk22_usuario  \nWHERE upper(EMAIL) = :APP_USER;\n"
+      }
+     ,"Layout":{
+        "Sequence":60
+       ,"Parent Region":"user_content (11806429543519826)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (8155645587772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noBorder"
+         ,"t-Region--scrollBody"
+         ,"margin-left-sm"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":15
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Value Attribute Pairs - Column (8221732444772838)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-AVPList--leftAligned"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "report_data"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"No Pagination (Show All Rows)"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":true
+        }
+       ,"Printing Attributes":{
+          "Output":{
+            "Link Text":"Print"
+           ,"Format":"PDF"
+           ,"Layout":"Default Report Layout"
+           ,"View File As":"Attachment"
+          }
+         ,"Page":{
+            "Size":"A4"
+           ,"Orientation":"Landscape"
+           ,"Units":"Millimeters"
+           ,"Width":297
+           ,"Height":210
+           ,"Border Width":0.5
+           ,"Border Color":"#666666"
+          }
+         ,"Page Header":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+           ,"Page Header Text":"user_data"
+          }
+         ,"Column Headings":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Bold"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#EEEEEE"
+          }
+         ,"Columns":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":10
+           ,"Font Color":"#000000"
+           ,"Background Color":"#FFFFFF"
+           ,"Width Units":"Percent"
+          }
+         ,"Page Footer":{
+            "Font":"Helvetica"
+           ,"Font Weight":"Normal"
+           ,"Font Size":12
+           ,"Font Color":"#000000"
+           ,"Alignment":"center"
+          }
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"2452218304649340"
+         ,"Identification":{
+            "Column Name":"PUNTOS"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Puntos"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":180
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2452297813649341"
+         ,"Identification":{
+            "Column Name":"ID_INSTITUCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Id Institucion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":190
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2452392770649342"
+         ,"Identification":{
+            "Column Name":"PREGUNTA"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":200
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2452495483649343"
+         ,"Identification":{
+            "Column Name":"RESPUESTA"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":210
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2452589751649344"
+         ,"Identification":{
+            "Column Name":"EQUIPO"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":220
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2489365195169738"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":10
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2489762610169738"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre(s): "
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2493734058169741"
+         ,"Identification":{
+            "Column Name":"EMAIL"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2494128032169741"
+         ,"Identification":{
+            "Column Name":"TIPO"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":150
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2494536463169741"
+         ,"Identification":{
+            "Column Name":"FOTO"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":160
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2494964836169741"
+         ,"Identification":{
+            "Column Name":"PASSWORD"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":170
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"12455339134465156"
+     ,"Identification":{
+        "Title":"tabs"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"content_estudent (11806175966519824)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (8151651230772808)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+         ,"t-Form--stretchInputs"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"12456407266465167"
+     ,"Identification":{
+        "Title":"Actuales"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SElECT c.NOMBRE,\n        c.DESCRIPCION,\n        a.NOMBRE as area,\n        i.NOMBRE as institucion,\n        e.COMPLETADO\nFROM HK22_ESTUDIANTE e\njoin HK22_CURSO c\non e.ID_CURSO=c.id\njoin HK22_AREA a\non c.ID_AREA=a.id\nleft join HK22_INSTITUCION i\non c.ID_INSTITUCION=i.id\nwhere upper(e.EMAIL) = :APP_USER \n    and e.COMPLETADO =\u0027No\u0027"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"tabs (12455339134465156)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay clases aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"2453569719649354"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453659062649355"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453720346649356"
+         ,"Identification":{
+            "Column Name":"AREA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Area"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453834138649357"
+         ,"Identification":{
+            "Column Name":"INSTITUCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Institucion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":40
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2453953657649358"
+         ,"Identification":{
+            "Column Name":"COMPLETADO"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Completado"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"12866439989125321"
+     ,"Identification":{
+        "Title":"Pasados"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SElECT c.NOMBRE,\n        c.DESCRIPCION,\n        a.NOMBRE as area,\n        i.NOMBRE as institucion,\n        e.COMPLETADO\nFROM HK22_ESTUDIANTE e\njoin HK22_CURSO c\non e.ID_CURSO=c.id\njoin HK22_AREA a\non c.ID_AREA=a.id\nleft join HK22_INSTITUCION i\non c.ID_INSTITUCION=i.id\nwhere upper(e.EMAIL) = :APP_USER \n    and e.COMPLETADO =\u0027Si\u0027"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"tabs (12455339134465156)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay clases aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"2454076767649359"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2454130524649360"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2454241143649361"
+         ,"Identification":{
+            "Column Name":"AREA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Area"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2454371844649362"
+         ,"Identification":{
+            "Column Name":"INSTITUCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Institucion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":40
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"2454450228649363"
+         ,"Identification":{
+            "Column Name":"COMPLETADO"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Completado"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"13261789796790735"
+     ,"Identification":{
+        "Title":"foto fija"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cimg class=\"image_user_content\" src=\"#APP_FILES#user.png\" atl=\"user_image\"\u003E"
+      }
+     ,"Layout":{
+        "Sequence":40
+       ,"Parent Region":"user_content (11806429543519826)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"3"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"report_data"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"select * from hk22_usuario\nwhere upper(email)=:APP_USER\nand foto is null"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"13262161533790738"
+     ,"Identification":{
+        "Title":"foto user"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select ID,\n       NOMBRE,\n       EMAIL,\n       PASSWORD,\n       FOTO,\n       PUNTOS,\n       TIPO,\n       ID_INSTITUCION,\n       PREGUNTA,\n       RESPUESTA,\n       EQUIPO,\n       DESCRIPCION\n  from HK22_USUARIO\n  WHERE upper(EMAIL) = :APP_USER;"
+      }
+     ,"Layout":{
+        "Sequence":50
+       ,"Parent Region":"user_content (11806429543519826)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"report_data"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"select * from hk22_usuario\nwhere upper(email)=:APP_USER\nand foto is null"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"2497438744169745"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "CSS Classes":[
+            "report_data"
+          ]
+         ,"Primary Key Column 1":"ID"
+        }
+       ,"Title":{
+          "Advanced Formatting":false
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"BLOB Column"
+         ,"BLOB Column":"FOTO"
+         ,"Position":"Body"
+         ,"Appearance":"Auto"
+         ,"Sizing":"Fit"
+         ,"CSS Classes":[
+            "image_user"
+          ]
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+      }
+    }
+   ,{
+      "id":"22664697627885269"
+     ,"Identification":{
+        "Title":"Mis Asesor\u00EDas"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT A.FECHA, A.NOMBRE, A.DESCRIPCION, A.ID_AREA, U2.NOMBRE AS PARA\nFROM HK22_ASESORIA A\nJOIN HK22_USUARIO U\nON A.ID_EMISOR= U.ID\nJOIN HK22_USUARIO U2\nON A.ID_RECEPTOR= U2.ID\nWHERE UPPER(U.EMAIL)=:APP_USER "
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"tabs (23623481483177999)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay asesor\u00EDas aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"18965767153263212"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18965394816263212"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18784305206502025"
+         ,"Identification":{
+            "Column Name":"FECHA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Fecha"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18784130579502024"
+         ,"Identification":{
+            "Column Name":"ID_AREA"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18784042142502023"
+         ,"Identification":{
+            "Column Name":"PARA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Para"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"22913243045367395"
+     ,"Identification":{
+        "Title":"botones"
+       ,"Type":"Cards"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select ID,\n       NOMBRE,\n       EMAIL,\n       PASSWORD,\n       FOTO,\n       PUNTOS,\n       TIPO,\n       ID_INSTITUCION,\n       PREGUNTA,\n       RESPUESTA,\n       EQUIPO\n  from HK22_USUARIO\n  WHERE upper(EMAIL) = :APP_USER;"
+      }
+     ,"Layout":{
+        "Sequence":70
+       ,"Parent Region":"user_content (11806429543519826)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Cards Container (8181784800772822)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Icon":"report_data"
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"2496058350169742"
+       ,"Appearance":{
+          "Layout":"Grid"
+         ,"Grid Columns":"Auto"
+        }
+       ,"Card":{
+          "CSS Classes":[
+            "report_data"
+          ]
+        }
+       ,"Title":{
+          "Advanced Formatting":false
+        }
+       ,"Subtitle":{
+          "Advanced Formatting":false
+        }
+       ,"Body":{
+          "Advanced Formatting":false
+        }
+       ,"Secondary Body":{
+          "Advanced Formatting":false
+        }
+       ,"Icon and Badge":{
+          "Icon Source":"No Icon"
+        }
+       ,"Media":{
+          "Advanced Formatting":false
+         ,"Source":"No Media"
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Pagination":{
+          "Type":"Scroll"
+         ,"Show Total Row Count":false
+        }
+       ,"Actions":[
+          {
+            "id":"18332726713851757"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Estad\u00EDsticas"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":20
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:49:\u0026SESSION.::\u0026DEBUG.:CR,49:P49_ID:\u0026ID."
+               ,"Page":"49"
+               ,"Clear Cache":"CR,49"
+               ,"Values":{
+                  "P49_ID":"\u0026ID."
+                }
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+             ,"CSS Classes":[
+                "boton"
+              ]
+            }
+           ,"Server-side Condition":{
+              "Type":"Rows returned"
+             ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027MAESTRO\u0027;"
+             ,"Execute Condition":"For Each Row"
+            }
+          }
+         ,{
+            "id":"2496598026169743"
+           ,"Identification":{
+              "Type":"Button"
+             ,"Label":"Editar"
+            }
+           ,"Layout":{
+              "Position":"Primary"
+             ,"Sequence":10
+            }
+           ,"Link":{
+              "Type":"Redirect to Page in this Application"
+             ,"Target":{
+                "url":"f?p=\u0026APP_ID.:14:\u0026SESSION.::\u0026DEBUG.:CR,14:P14_ID:\u0026ID."
+               ,"Page":"14"
+               ,"Clear Cache":"CR,14"
+               ,"Values":{
+                  "P14_ID":"\u0026ID."
+                }
+              }
+            }
+           ,"Appearance":{
+              "Display Type":"Text"
+             ,"Hot":true
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"22974318315232667"
+     ,"Identification":{
+        "Title":"content_Tutor"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":130
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":false
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":true
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027TUTOR\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"23623481483177999"
+     ,"Identification":{
+        "Title":"tabs"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"content_Tutor (22974318315232667)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (8151651230772808)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+         ,"t-Form--stretchInputs"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"23624549615178010"
+     ,"Identification":{
+        "Title":"Actuales"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT A.FECHA, A.NOMBRE, A.DESCRIPCION, A.ID_AREA, U2.NOMBRE AS PARA\nFROM HK22_ASESORIA A\nJOIN HK22_USUARIO U\nON A.ID_EMISOR= U.ID\nJOIN HK22_USUARIO U2\nON A.ID_RECEPTOR= U2.ID\nWHERE UPPER(U.EMAIL)=:APP_USER \n    AND A.FECHA \u003E= SYSDATE"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"tabs (23623481483177999)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay asesor\u00EDas aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"18968032903263214"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18967696649263214"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783935138502022"
+         ,"Identification":{
+            "Column Name":"FECHA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Fecha"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783886819502021"
+         ,"Identification":{
+            "Column Name":"ID_AREA"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783723949502020"
+         ,"Identification":{
+            "Column Name":"PARA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Para"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"24034582337838164"
+     ,"Identification":{
+        "Title":"Pasados"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT A.FECHA, A.NOMBRE, A.DESCRIPCION, A.ID_AREA, U2.NOMBRE AS PARA\nFROM HK22_ASESORIA A\nJOIN HK22_USUARIO U\nON A.ID_EMISOR= U.ID\nJOIN HK22_USUARIO U2\nON A.ID_RECEPTOR= U2.ID\nWHERE UPPER(U.EMAIL)=:APP_USER \n    AND A.FECHA \u003C SYSDATE"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"tabs (23623481483177999)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay asesor\u00EDas aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"18963459271263211"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18963102237263210"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783682258502019"
+         ,"Identification":{
+            "Column Name":"FECHA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Fecha"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":30
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783563548502018"
+         ,"Identification":{
+            "Column Name":"ID_AREA"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":40
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18783472911502017"
+         ,"Identification":{
+            "Column Name":"PARA"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Para"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":50
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"34449154518809322"
+     ,"Identification":{
+        "Title":"Mis Cursos"
+       ,"Type":"Classic Report"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"SELECT C.ID, C.NOMBRE,C.DESCRIPCION\nFROM HK22_MAESTRO M\nJOIN HK22_CURSO C\nON M.ID_CURSO= C.ID\nJOIN HK22_USUARIO U\nON M.ID_USUARIO= U.ID\nWHERE UPPER(U.EMAIL)=:APP_USER"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"tabs (35407938374102052)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "renta"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Layout":{
+          "Number of Rows Type":"Static Value"
+         ,"Number of Rows":10
+        }
+       ,"Appearance":{
+          "Template Type":"Theme"
+         ,"Template":"Standard (8218781215772837)"
+         ,"Template Options":[
+            "#DEFAULT#"
+           ,"t-Report--stretch"
+           ,"t-Report--altRowsDefault"
+           ,"t-Report--rowHighlight"
+           ,"t-Report--noBorders"
+           ,"t-Report--hideNoPagination"
+          ]
+         ,"CSS Classes":[
+            "filas_mis_rentas"
+          ]
+        }
+       ,"Pagination":{
+          "Type":"Row Ranges X to Y of Z (with pagination)"
+         ,"Display Position":"Bottom - Right"
+         ,"Partial Page Refresh":true
+        }
+       ,"Performance":{
+          "Lazy Loading":false
+        }
+       ,"Messages":{
+          "When No Data Found":"No hay asesor\u00EDas aun "
+        }
+       ,"Break Formatting":{
+          "Break Columns":"No Break"
+        }
+       ,"Advanced":{
+          "Strip HTML":false
+         ,"Sort Nulls":"Last"
+        }
+       ,"Heading":{
+          "Type":"Custom Headings"
+        }
+       ,"Download":{
+          "CSV Export Enabled":false
+        }
+       ,"Printing":{
+          "Enabled":false
+        }
+      }
+     ,"Columns":[
+        {
+          "id":"18569463842737614"
+         ,"Identification":{
+            "Column Name":"ID"
+           ,"Type":"Hidden Column"
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18349473132052005"
+         ,"Identification":{
+            "Column Name":"NOMBRE"
+           ,"Type":"Link"
+          }
+         ,"Heading":{
+            "Heading":"Nombre"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":10
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Link":{
+            "Target":{
+              "url":"f?p=\u0026APP_ID.:2:\u0026SESSION.::\u0026DEBUG.:CR,2:P2_ID:#ID#"
+             ,"Page":"2"
+             ,"Clear Cache":"CR,2"
+             ,"Values":{
+                "P2_ID":"#ID#"
+              }
+            }
+           ,"Link Text":"#NOMBRE#"
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+       ,{
+          "id":"18349068430052005"
+         ,"Identification":{
+            "Column Name":"DESCRIPCION"
+           ,"Type":"Plain Text"
+          }
+         ,"Heading":{
+            "Heading":"Descripcion"
+           ,"Alignment":"center"
+          }
+         ,"Layout":{
+            "Sequence":20
+           ,"Column Alignment":"start"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Sorting":{
+            "Sortable":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Advanced":{
+            "Compute Sum":false
+          }
+         ,"UI Defaults Reference":{
+            "Table Owner":"Parsing Schema"
+          }
+         ,"Security":{
+            "Escape special characters":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"34758775206156720"
+     ,"Identification":{
+        "Title":"content_Maestro"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":120
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":false
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server-side Condition":{
+        "Type":"Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario \nWHERE upper(EMAIL) = :APP_USER\nAND TIPO=\u0027MAESTRO\u0027;"
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"35407938374102052"
+     ,"Identification":{
+        "Title":"tabs"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"content_Maestro (34758775206156720)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Tabs Container (8151651230772808)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-TabsRegion-mod--simple"
+         ,"t-Form--stretchInputs"
+        ]
+       ,"CSS Classes":[
+          "content_rents"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"41294625666847820"
+     ,"Identification":{
+        "Title":"title"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cbr\u003E\u003Cbr\u003E\n\u003Ch1\u003EMis Cursos\u003C\/h1\u003E\n\t\t\u003Chr\u003E\u003Cbr\u003E"
+      }
+     ,"Layout":{
+        "Sequence":30
+       ,"Parent Region":"content_estudent (11806175966519824)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "titulo"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"52462768015560663"
+     ,"Identification":{
+        "Title":"title"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cbr\u003E\u003Cbr\u003E\n\u003Ch1\u003EMis Asesor\u00EDas\u003C\/h1\u003E\n\t\t\u003Chr\u003E\u003Cbr\u003E"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"content_Tutor (22974318315232667)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "titulo"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+   ,{
+      "id":"64247224906484716"
+     ,"Identification":{
+        "Title":"title"
+       ,"Type":"Static Content"
+      }
+     ,"Source":{
+        "HTML Code":"\u003Cbr\u003E\u003Cbr\u003E\n\u003Ch1\u003EMis Cursos\u003C\/h1\u003E\n\t\t\u003Chr\u003E\u003Cbr\u003E"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"content_Maestro (34758775206156720)"
+       ,"Position":"SUB_REGIONS"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Blank with Attributes (No Grid) (8154223734772809)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"CSS Classes":[
+          "titulo"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"19031336286978430"
+     ,"Identification":{
+        "Button Name":"select"
+       ,"Label":"Seleccionar \u00E1reas"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"area_tutor (19031770974978434)"
+       ,"Position":"BELOW_BOX"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Horizontal Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:38:\u0026SESSION.::\u0026DEBUG.:38::"
+         ,"Page":"38"
+         ,"Clear Cache":"38"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"19030208282978418"
+     ,"Identification":{
+        "Button Name":"Nuevo"
+       ,"Label":"Nuevo"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"New (19031201244978428)"
+       ,"Position":"BOTTOM"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+       ,"Horizontal Alignment":"Right"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":false
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:39:\u0026SESSION.::\u0026DEBUG.:CR,39::"
+         ,"Page":"39"
+         ,"Clear Cache":"CR,39"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"18570148127737621"
+     ,"Identification":{
+        "Button Name":"Estad\u00EDsticas"
+       ,"Label":"Estad\u00EDsticas"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"content_estudent (11806175966519824)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:36:\u0026SESSION.::\u0026DEBUG.:36::"
+         ,"Page":"36"
+         ,"Clear Cache":"36"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"18333840989874829"
+     ,"Identification":{
+        "Button Name":"CREATE"
+       ,"Label":"Create"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Mis Cursos (34449154518809322)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:17:\u0026SESSION.::\u0026DEBUG.:17"
+         ,"Page":"17"
+         ,"Clear Cache":"17"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"18325933566825780"
+     ,"Identification":{
+        "Button Name":"CREATE"
+       ,"Label":"Create"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Region":"Mis Clases (18569275028737612)"
+       ,"Position":"NEXT"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Redirect to Page in this Application"
+       ,"Target":{
+          "url":"f?p=\u0026APP_ID.:32:\u0026SESSION.::\u0026DEBUG.:32"
+         ,"Page":"32"
+         ,"Clear Cache":"32"
+        }
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+   ,{
+      "id":"2555970845749241"
+     ,"Identification":{
+        "Button Name":"Trofeos"
+       ,"Label":"Trofeos"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"Equipo (2554652492749228)"
+       ,"Position":"CLOSE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text (8253704793772854)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Dynamic Actions":[
+    {
+      "id":"18785108191502033"
+     ,"Identification":{
+        "Name":"todos"
+      }
+     ,"Execution Options":{
+        "Sequence":50
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Region"
+       ,"Region":"Todos (19031115691978427)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"18784922126502032"
+         ,"Identification":{
+            "Action":"Execute Server-side Code"
+          }
+         ,"Settings":{
+            "Language":"PE.PROPERTY.SOURCE_SNIPPET_LANG.LOV.PLSQL.D"
+           ,"PL\/SQL Code":"update HK22_MENSAJE set VISTO=\u0027Si\u0027;"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"todos (18785108191502033)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"18784890841502031"
+     ,"Identification":{
+        "Name":"noL"
+      }
+     ,"Execution Options":{
+        "Sequence":60
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.BROWSER.CLICK"
+       ,"Selection Type":"Region"
+       ,"Region":"No le\u00EDdo  (19030951688978426)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"18784748980502030"
+         ,"Identification":{
+            "Action":"Execute Server-side Code"
+          }
+         ,"Settings":{
+            "Language":"PE.PROPERTY.SOURCE_SNIPPET_LANG.LOV.PLSQL.D"
+           ,"PL\/SQL Code":"update HK22_MENSAJE set VISTO=\u0027Si\u0027;"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"noL (18784890841502031)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+           ,"Stop Execution On Error":true
+           ,"Wait For Result":true
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"2507393982169757"
+     ,"Identification":{
+        "Name":"datos"
+      }
+     ,"Execution Options":{
+        "Sequence":20
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.FAMEWORK.APEXAFTERCLOSEDIALOG"
+       ,"Selection Type":"Region"
+       ,"Region":"botones (22913243045367395)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"2507911542169758"
+         ,"Identification":{
+            "Action":"Refresh"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"user_data (11822062526535359)"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"datos (2507393982169757)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"2508267416169758"
+     ,"Identification":{
+        "Name":"imgFija"
+      }
+     ,"Execution Options":{
+        "Sequence":40
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.FAMEWORK.APEXAFTERCLOSEDIALOG"
+       ,"Selection Type":"Region"
+       ,"Region":"botones (22913243045367395)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"2508738357169758"
+         ,"Identification":{
+            "Action":"Refresh"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"foto fija (13261789796790735)"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"imgFija (2508267416169758)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+   ,{
+      "id":"2509127130169759"
+     ,"Identification":{
+        "Name":"foto"
+      }
+     ,"Execution Options":{
+        "Sequence":30
+      }
+     ,"When":{
+        "Event":"EVENT.EVENT.FAMEWORK.APEXAFTERCLOSEDIALOG"
+       ,"Selection Type":"Region"
+       ,"Region":"botones (22913243045367395)"
+      }
+     ,"Advanced":{
+        "Event Scope":"Static"
+      }
+     ,"Actions":[
+        {
+          "id":"2509692607169759"
+         ,"Identification":{
+            "Action":"Refresh"
+          }
+         ,"Affected Elements":{
+            "Selection Type":"Region"
+           ,"Region":"foto user (13262161533790738)"
+          }
+         ,"Execution Options":{
+            "Sequence":10
+           ,"Event":"foto (2509127130169759)"
+           ,"Fire When Event Result Is":"True"
+           ,"Fire on Initialization":false
+          }
+        }
+      ]
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"2506985535169755"
+     ,"Identification":{
+        "Name":"Initialize form Usuario "
+       ,"Type":"Clear Session State"
+      }
+     ,"Settings":{
+        "Type":"Clear all Items on the Current Page"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Before Header"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+    }
+  ]
+ ,"Branches":[
+    {
+      "id":"2510136909169760"
+     ,"Identification":{
+        "Name":"Go out"
+      }
+     ,"Execution Options":{
+        "Sequence":10
+       ,"Point":"Before Header"
+      }
+     ,"Behavior":{
+        "Type":"URL Identified by Item (Redirect)"
+       ,"Item":"\u0026LOGOUT_URL."
+      }
+     ,"Server-side Condition":{
+        "Type":"No Rows returned"
+       ,"SQL Query":"SELECT * FROM hk22_usuario WHERE upper(EMAIL) = :APP_USER;"
+      }
+    }
+  ]
+}
