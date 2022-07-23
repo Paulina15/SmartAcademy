@@ -1,0 +1,321 @@
+prompt --application/pages/page_00022
+begin
+--   Manifest
+--     PAGE: 00022
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.04.12'
+,p_release=>'22.1.2'
+,p_default_workspace_id=>7870384460919289
+,p_default_application_id=>104
+,p_default_id_offset=>30137121571976061
+,p_default_owner=>'SACALABICI'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>22
+,p_user_interface_id=>wwv_flow_imp.id(8278525726772866)
+,p_name=>'Formulario Nuevos Usuarios'
+,p_alias=>'FORMULARIO-NUEVOS-USUARIOS'
+,p_step_title=>'Crear Cuenta'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_page_is_public_y_n=>'Y'
+,p_rejoin_existing_sessions=>'N'
+,p_page_component_map=>'02'
+,p_last_updated_by=>'ABI'
+,p_last_upd_yyyymmddhh24miss=>'20220723012320'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(10701277817483947)
+,p_plug_name=>'FORMULARIO CREAR CUENTA'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_imp.id(8155645587772809)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'HK22_USUARIO'
+,p_include_rowid_column=>false
+,p_is_editable=>true
+,p_edit_operations=>'i:u:d'
+,p_lost_update_check_type=>'VALUES'
+,p_plug_source_type=>'NATIVE_FORM'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(10877039349249902)
+,p_plug_name=>'AVISO'
+,p_parent_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(8154223734772809)
+,p_plug_display_sequence=>130
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>Aviso de privacidad</p>',
+unistr('<p>Acepto t\00E9rminos y condiciones de la informaci\00F3n recopilada en este formulario </br>'),
+unistr('Se puede acceder a esta informaci\00F3n de acuerdo con la ley de '),
+unistr('    "protecci\00F3n de datos personales en posesi\00F3n de sujetos obligados"; y puede '),
+unistr('    solicitar acceso a mi informaci\00F3n y solicitar editarla o eliminarla.'),
+unistr('     Tambi\00E9n acepto cumplir con las especificaciones de comportamiento. </p>')))
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(10702958219483956)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_button_name=>'CANCEL'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(8253704793772854)
+,p_button_image_alt=>'Cancelar'
+,p_button_position=>'CLOSE'
+,p_button_redirect_url=>'f?p=&APP_ID.:9999:&SESSION.::&DEBUG.:::'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(10707059707491709)
+,p_button_sequence=>50
+,p_button_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_button_name=>'SAVE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(8253704793772854)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Crear cuenta'
+,p_button_position=>'CREATE'
+,p_database_action=>'INSERT'
+);
+wwv_flow_imp_page.create_page_branch(
+ p_id=>wwv_flow_imp.id(10707213143491711)
+,p_branch_name=>'Redireccion'
+,p_branch_action=>'f?p=&APP_ID.:9999:&SESSION.::&DEBUG.:9999::&success_msg=#SUCCESS_MSG#'
+,p_branch_point=>'AFTER_PROCESSING'
+,p_branch_type=>'REDIRECT_URL'
+,p_branch_when_button_id=>wwv_flow_imp.id(10707059707491709)
+,p_branch_sequence=>10
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(129775615146328)
+,p_name=>'P22_PUNTOS'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>150
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_default=>'0'
+,p_source=>'PUNTOS'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(129830011146329)
+,p_name=>'P22_ID_INSTITUCION'
+,p_source_data_type=>'NUMBER'
+,p_item_sequence=>70
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>'Id Institucion'
+,p_source=>'ID_INSTITUCION'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_NUMBER_FIELD'
+,p_cSize=>30
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attribute_03=>'right'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(9321840823350142)
+,p_name=>'P22_NOMBRE'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>'Nombre(s)'
+,p_source=>'NOMBRE'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_cMaxlength=>600
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_help_text=>unistr('Nombre o nombres seg\00FAn sea el caso.')
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'BOTH'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10701538729483948)
+,p_name=>'P22_ID'
+,p_source_data_type=>'NUMBER'
+,p_is_primary_key=>true
+,p_is_query_only=>true
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Id'
+,p_source=>'ID'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_label_alignment=>'RIGHT'
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_protection_level=>'S'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10706363112491702)
+,p_name=>'P22_EMAIL'
+,p_source_data_type=>'VARCHAR2'
+,p_is_required=>true
+,p_item_sequence=>50
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>unistr('Correo electr\00F3nico')
+,p_source=>'EMAIL'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>60
+,p_cMaxlength=>600
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_help_text=>unistr('Correo electr\00F3nico personal.')
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'BOTH'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10706477380491703)
+,p_name=>'P22_FOTO'
+,p_source_data_type=>'BLOB'
+,p_item_sequence=>110
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_source=>'FOTO'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10706527460491704)
+,p_name=>'P22_PASSWORD'
+,p_source_data_type=>'VARCHAR2'
+,p_is_required=>true
+,p_item_sequence=>60
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>unistr('Contrase\00F1a')
+,p_source=>'PASSWORD'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_PASSWORD'
+,p_cSize=>30
+,p_cMaxlength=>600
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_help_text=>unistr('<p>Conjunto de caracteres privados para acceder a la sesi\00F3n.</br> Son aceptados tanto letras, n\00FAmeros y/o s\00EDmbolos.</p>')
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10706610848491705)
+,p_name=>'P22_TIPO'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>140
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_default=>'P22_TIPO'
+,p_item_default_type=>'ITEM'
+,p_source=>'TIPO'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(10876971576249901)
+,p_name=>'PRIVACIDAD'
+,p_is_required=>true
+,p_item_sequence=>120
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>unistr('ACEPTO T\00C9RMINOS Y CONDICIONES.')
+,p_display_as=>'NATIVE_SINGLE_CHECKBOX'
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(11482948108871502)
+,p_name=>'P22_PREGUNTA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>80
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>'Pregunta de seguridad'
+,p_source=>'PREGUNTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_SELECT_LIST'
+,p_lov=>unistr('STATIC:\00BFCu\00E1l fue/es el nombre de tu primer mascota?;\00BFCu\00E1l fue/es el nombre de tu primer mascota?,\00BFCu\00E1l fue el nombre de la primera escuela a la que fuiste?;\00BFCu\00E1l fue el nombre de la primera escuela a la que fuiste?,\00BFCu\00E1l es el nombre de tu prima mayo')
+||unistr('r?;\00BFCu\00E1l es el nombre de tu prima mayor?')
+,p_cHeight=>1
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_help_text=>unistr('Elige tu pregunta de seguridad en caso de que se te olvide tu contrase\00F1a.')
+,p_attribute_01=>'NONE'
+,p_attribute_02=>'N'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(11483044968871503)
+,p_name=>'P22_RESPUESTA'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>90
+,p_item_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_item_source_plug_id=>wwv_flow_imp.id(10701277817483947)
+,p_prompt=>'Respuesta'
+,p_source=>'RESPUESTA'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>60
+,p_cMaxlength=>250
+,p_field_template=>wwv_flow_imp.id(8251284600772853)
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_inline_help_text=>unistr('Recuerde esta respuesta, ya que se le solicitar\00E1 en caso de que olvide su contrase\00F1a.')
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'BOTH'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(10705177903483960)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_region_id=>wwv_flow_imp.id(10701277817483947)
+,p_process_type=>'NATIVE_FORM_DML'
+,p_process_name=>'Process form Formulario Nuevos Usuarios'
+,p_attribute_01=>'REGION_SOURCE'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'Y'
+,p_attribute_08=>'Y'
+,p_process_error_message=>'Su cuenta no se pudo crear'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_success_message=>unistr('\00A1Cuenta creada!')
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(10704727502483960)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_region_id=>wwv_flow_imp.id(10701277817483947)
+,p_process_type=>'NATIVE_FORM_INIT'
+,p_process_name=>'Initialize form Formulario Nuevos Usuarios'
+);
+wwv_flow_imp.component_end;
+end;
+/
